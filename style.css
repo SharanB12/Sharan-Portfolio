@@ -596,11 +596,3 @@ footer {
   margin-top: 0.6rem;
   text-align: center;
 }
-
-.logo-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #22c55e;
-}
