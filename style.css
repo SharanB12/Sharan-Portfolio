@@ -29,6 +29,11 @@ body {
   width: 100%;
   padding: 1rem 2rem;
 }
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
 .logo {
   display: flex;
