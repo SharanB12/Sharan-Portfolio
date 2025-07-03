@@ -526,3 +526,132 @@ footer {
   margin-top: 0.6rem;
   text-align: center;
 }
+
+/* ===== MOBILE RESPONSIVE FIXED STYLES ===== */
+@media (max-width: 768px) {
+
+  /* Fix navbar alignment on mobile */
+  .nav-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Hero section */
+  .hero-section {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-right .green {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-right p {
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .section {
+    padding: 4rem 1rem;
+  }
+
+  .project-grid,
+  .achievement-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-cert-container {
+    flex-direction: column;
+  }
+
+  .tech-skills,
+  .certifications {
+    width: 100%;
+  }
+
+  .resume-btn,
+  .repo-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Education Table Responsive Fix */
+  .edu-table {
+    gap: 1rem;
+  }
+
+  .edu-row {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #1e293b;
+    border-radius: 10px;
+    border: 1px solid #334155;
+  }
+
+  .edu-row.header {
+    display: none; /* Hide header on mobile */
+  }
+
+  .edu-row div::before {
+    font-weight: bold;
+    display: block;
+    color: #22c55e;
+    margin-bottom: 4px;
+  }
+
+  .edu-row div:nth-child(1)::before { content: "Course"; }
+  .edu-row div:nth-child(2)::before { content: "Institution"; }
+  .edu-row div:nth-child(3)::before { content: "Board"; }
+  .edu-row div:nth-child(4)::before { content: "Year"; }
+  .edu-row div:nth-child(5)::before { content: "Marks"; }
+
+  .note {
+    font-size: 0.75rem;
+  }
+}
+
+/* === Extra Mobile Tweaks (for very small screens) === */
+@media (max-width: 480px) {
+  .hero-right h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-right .green {
+    font-size: 1rem;
+  }
+
+  .section h1,
+  .section h2.section-title {
+    font-size: 1.8rem;
+  }
+}
+
