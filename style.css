@@ -596,11 +596,6 @@ footer {
   margin-top: 0.6rem;
   text-align: center;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .logo-img {
   width: 32px;
