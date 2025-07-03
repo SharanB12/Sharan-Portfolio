@@ -487,71 +487,23 @@ footer {
   font-weight: 600;
 }
 
-.education-container {
-  margin-top: 3rem;
-}
-
-.edu-table {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-  color: #cbd5e1;
-}
-
-.edu-row {
-  display: grid;
-  grid-template-columns: 1.5fr 2fr 1.5fr 1fr 1fr;
-  background: #1e293b;
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #334155;
-}
-
-.edu-row.header {
-  background: #22c55e;
-  color: #0f172a;
-  font-weight: 700;
-}
-
-.subtext {
-  font-size: 0.8rem;
-  color: #94a3b8;
-}
-
-.note {
-  font-size: 0.8rem;
-  color: #94a3b8;
-  margin-top: 0.6rem;
-  text-align: center;
-}
-
-/* ===== MOBILE RESPONSIVE FIXED STYLES ===== */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
 
-  /* Fix navbar alignment on mobile */
   .nav-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
   .nav-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 12px;
-    width: auto;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 1rem;
   }
 
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  /* Hero section */
   .hero-section {
     flex-direction: column;
     padding: 3rem 1rem;
@@ -595,64 +547,54 @@ footer {
     width: 100%;
   }
 
-  .resume-btn,
-  .repo-btn {
+  .resume-btn {
     width: 100%;
     text-align: center;
+  }
+
+  .repo-btn {
     justify-content: center;
-  }
-
-  /* Education Table Responsive Fix */
-  .edu-table {
-    gap: 1rem;
-  }
-
-  .edu-row {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-size: 0.9rem;
-    background: #1e293b;
-    border-radius: 10px;
-    border: 1px solid #334155;
-  }
-
-  .edu-row.header {
-    display: none; /* Hide header on mobile */
-  }
-
-  .edu-row div::before {
-    font-weight: bold;
-    display: block;
-    color: #22c55e;
-    margin-bottom: 4px;
-  }
-
-  .edu-row div:nth-child(1)::before { content: "Course"; }
-  .edu-row div:nth-child(2)::before { content: "Institution"; }
-  .edu-row div:nth-child(3)::before { content: "Board"; }
-  .edu-row div:nth-child(4)::before { content: "Year"; }
-  .edu-row div:nth-child(5)::before { content: "Marks"; }
-
-  .note {
-    font-size: 0.75rem;
+    width: 100%;
   }
 }
+.education-container {
+  margin-top: 3rem;
+}
 
-/* === Extra Mobile Tweaks (for very small screens) === */
-@media (max-width: 480px) {
-  .hero-right h1 {
-    font-size: 1.6rem;
-  }
+.edu-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
 
-  .hero-right .green {
-    font-size: 1rem;
-  }
+.edu-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr 1fr 1fr;
+  background: #1e293b;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
 
-  .section h1,
-  .section h2.section-title {
-    font-size: 1.8rem;
-  }
+.edu-row.header {
+  background: #22c55e;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.subtext {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 0.6rem;
+  text-align: center;
 }
 .logo {
   display: flex;
