@@ -35,19 +35,7 @@ body {
   font-weight: 600;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.logo-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #22c55e;
-}
 .nav-links a {
   color: #fff;
   margin-left: 20px;
@@ -701,3 +689,16 @@ footer {
   }
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #22c55e;
+}
